@@ -1,0 +1,83 @@
+/* Custom Scrollbar */
+#chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+#chat-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#chat-box::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 80%;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bot-msg {
+    align-self: flex-start;
+}
+
+.bot-bubble {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 1rem 1rem 1rem;
+    padding: 0.75rem 1rem;
+    color: #1f2937;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.user-msg {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.user-bubble {
+    background-color: #2563eb; /* blue-600 */
+    border-radius: 1rem 0 1rem 1rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Specific formatting for math/questions */
+.question-text {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.hint-box {
+    background-color: #fffbeb;
+    border-left: 3px solid #f59e0b;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #92400e;
+}
+
+.explanation-box {
+    background-color: #ecfdf5;
+    border-left: 3px solid #10b981;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #065f46;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+}
