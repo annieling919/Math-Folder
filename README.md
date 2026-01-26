@@ -35,3 +35,18 @@
 *   **求助**：遇到不会的题，输入 `提示` 或 `再给个提示`。
 *   **看解析**：输入 `解析` 或 `答案` 直接查看详解。
 *   **结束**：输入 `结束` 或 `不练了` 查看学习小结。
+
+## Deployment Info (Cloudflare Pages)
+
+This project has been configured for Cloudflare Pages deployment with Hono backend.
+
+- **Frontend**: Static HTML/CSS/JS (served via Vite in dev, Cloudflare Pages in prod)
+- **Backend**: Hono (API routes at `/api/*`)
+- **Development**: `npm run dev` (Vite)
+- **Production**: `npm run deploy` (Wrangler)
+- **Public URL**: https://webapp.pages.dev (after deployment)
+
+### How to Deploy
+
+1. Setup Cloudflare API Key: `setup_cloudflare_api_key`
+2. Deploy: `npm run deploy`

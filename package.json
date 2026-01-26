@@ -2,7 +2,7 @@
   "name": "webapp",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0 --port 3000",
     "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",
     "build": "vite build",
     "preview": "wrangler pages dev dist",
@@ -14,11 +14,12 @@
     "hono": "^4.0.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250705.0",
+    "@cloudflare/workers-types": "^4.20260124.0",
     "@hono/vite-cloudflare-pages": "^0.4.2",
-    "vite": "^5.0.0",
-    "wrangler": "^3.78.0",
+    "@hono/vite-dev-server": "^0.24.1",
+    "@types/node": "^20.0.0",
     "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
+    "vite": "^5.0.0",
+    "wrangler": "^4.60.0"
   }
 }
